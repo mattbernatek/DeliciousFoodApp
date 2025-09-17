@@ -39,6 +39,9 @@ main {
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
     width: 300px;
     overflow: hidden;
     box-shadow: 5px 5px 4px grey;
@@ -61,6 +64,7 @@ footer {
 
 .card-content {
     padding: 10px;
+    flex: 1;
 }
 
 .card-content h2 {
