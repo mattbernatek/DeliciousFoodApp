@@ -1,3 +1,9 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -9,10 +15,12 @@ header {
     background-color: #ff6347;
     color: white;
     text-align: center;
+    padding: 20px 0px 20px 0px;
 }
 
 main {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     flex: 1;
 }
@@ -26,22 +34,36 @@ main {
 }
 
 .card img {
-    height: 250px;
-    width: 300px;
-    border-radius: 10px;
+    height: 200px;
+    width: 100%;
     object-fit: cover;
 }
 
 .card {
-    width: 250px;
+    width: 300px;
     overflow: hidden;
+    box-shadow: 5px 5px 4px grey;
+    border-radius: 10px;
 }
 
 .card-container {
     display: flex;
+    flex-wrap: wrap;
+    gap: 45px;
+    justify-content: center;
+}
 
+footer {
+    background-color: #ff6347;
+    color: white;
+    text-align: center;
+    padding: 20px 0px 20px;
 }
 
 .card-content {
-    
+    padding: 10px;
+}
+
+.card-content h2 {
+    padding: 10px 0px 10px 0px;
 }
